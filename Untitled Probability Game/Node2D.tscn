@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://RouletteWheel.gd" type="Script" id=1]
+[ext_resource path="res://wheel.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RouletteWheel" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+
+[node name="Tween" type="Tween" parent="RouletteWheel"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+[connection signal="tween_completed" from="RouletteWheel/Tween" to="RouletteWheel" method="_on_Tween_tween_completed"]
