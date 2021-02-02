@@ -16,8 +16,8 @@ _global_script_class_icons={
 [application]
 
 config/name="Untitled Probability Game"
-run/main_scene="res://Node2D.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://Content/Scenes/Node2D.tscn"
+config/icon="res://Content/Sprites/icon.png"
 
 [rendering]
 
